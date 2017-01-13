@@ -1,22 +1,21 @@
 {
-  "name": "todo",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "name": "todoblog",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CodeDreamfy/todoBlog.git"
-  },
-  "author": "codedreamfy",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CodeDreamfy/todoBlog/issues"
-  },
-  "homepage": "https://github.com/CodeDreamfy/todoBlog#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "~2.5.2",
+    "express": "~4.14.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.11.0",
+    "nunjucks": "3.0.0"
   }
 }
