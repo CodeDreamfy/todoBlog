@@ -8,3 +8,9 @@ Vue.use(VueRouter);
 const routes = [
   { path: '/', component: index}
 ]
+
+const router = new VueRouter({
+	routes
+})
+
+export default router
