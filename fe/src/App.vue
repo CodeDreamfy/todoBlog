@@ -1,6 +1,7 @@
 <template>
   <div id="app">
      hello wrold
+     <p>LEss</p>
   </div>
 </template>
 
@@ -10,12 +11,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
+@import "~normalize.css/normalize.css";
+@import "./lib/common.css";
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+
 }
 </style>

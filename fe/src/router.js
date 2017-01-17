@@ -2,16 +2,17 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import index from './App'
-import hello from './components/hello'
+import error from './components/error'
 
 Vue.use(VueRouter);
 
 const routes = [
   { path: '/', component: index},
-  { path: '/hello', component: hello}
+  { path: '*', component: error}
 ]
 
 const router = new VueRouter({
+  // mode: 'history',
 	routes
 })
 

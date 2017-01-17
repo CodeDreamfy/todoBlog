@@ -1,5 +1,5 @@
 <template lang="html">
-    <p>hehe nihao</p>
+    <p>Sorry,未找到该页面</p>
 </template>
 
 <script>

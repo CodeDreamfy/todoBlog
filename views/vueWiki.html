@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+</head>
+<body>
+  <h1> 请教使用 vue-cli 生成的 webpack 如何单独引入 css 库文件？</h1>
+  <p>
+    在 App.vue 底下用 SASS 或 LESS 去 @import:
+
+    < style lang="less">
+      @import "~normalize.css/normalize.css";
+    < /style >
+    < script >...< /script >
+
+    < template >...< /template >
+    ~ 會解析為 node_modules
+  </p>
+  <hr>
+  <h1> nodejs部署方式 - pm2</h1>
+  <div>
+    <p> pm2=P(rocess) M(anager)2，是可以用于生产环境的Nodejs的进程管理工具，并且它内置一个负载均衡。它不仅可以保证服务不会中断一直在线，并且提供0秒reload功能，还有其他一系列进程管理、监控功能</p>
+    <p> npm i -g pm2</p>
+    <p> 配置processes.json</p>
+    <p> npm run pm2</p>
+    <ul>
+      <li>pm2 list</li>
+      <li>pm2 stop [app-name|id]  #停止某一个进程，可以使用app-name或者id</li>
+      <li>pm2 stop all            #停止所有进程</li>
+      <li>pm2 restart all         #重启所有的进程</li>
+      <li>pm2 delete [app-name|id]#删除并停止进程</li>
+      <li>pm2 delete all          #删除并停止所有进程</li>
+      <li>$ pm2 logs</li>
+      <li>pm2 logs [app-name]</li>
+    </ul>
+    <hr>
+  </div>
+</body>
+</html>

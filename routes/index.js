@@ -1,5 +1,5 @@
 module.exports = (app)=>{
-  app.get('/admin', (req, res)=>{
-    res.render('index', { title: 'Express Admin'})
+  app.get('/vue', (req, res)=>{
+    res.render('vueWiki', { title: 'Vue Wiki'})
   })
 };
