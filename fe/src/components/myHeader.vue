@@ -1,7 +1,7 @@
 <template>
   <header>
-		<div class="logo"></div>
 		<div class="box_wrapper">
+      <div class="logo"></div>
 			<nav>
 				<a href="javascript:;" class="active">首页</a>
 				<a href="javascript:;">技术天地</a>
@@ -10,7 +10,7 @@
 				<a href="javascript:;">音乐推荐</a>
 			</nav>
 		</div>
-		
+
 	</header>
 </template>
 <script>
@@ -26,19 +26,34 @@
 		align-items: center;
 		.box_wrapper {
 			height: 100%;
+      display: flex; justify-content: space-between;
+      align-items: center;
+      .logo {
+        width: 80px; height: 80px;
+        border-radius: 50%; transition: all 0.6s;
+        background: url(../assets/face.jpg) no-repeat center center;
+        background-size: 60px 60px;
+        &:hover {
+          box-shadow: 0.1em 0.1em 0.3em 0 #ccc inset;
+          background-size: 80px 80px;
+        }
+      }
 			nav {
-				float: right;
-				height: 100%; 
+				height: 100%; flex: none;
 				display: flex; align-items: center;
 				justify-content: center;
 				& > a {
-					height: 100%; padding: 0 24px; 
+					height: 100%; padding: 0 24px;
 					flex: 0 0 auto; display: flex; align-items: center;
-					&.active,&:hover {
+					&.active {
 						color: #1397fd; font-weight: 600;
 						background: rgba(231,231,231,.5);
 						box-shadow: 0 0.1em 0.2em 0 #e7e7e7 inset;
 					}
+          &:hover.active { background: rgba(231,231,231,.5); }
+          &:hover {
+            background: rgba(231,231,231,.3);
+          }
 				}
 			}
 		}
