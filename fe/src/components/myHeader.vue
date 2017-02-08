@@ -28,7 +28,7 @@
 		background: #fff;
 		box-shadow: 0 0.4em 0.4em 0 #eee;
 		display: flex; justify-content: space-between;
-		align-items: center;
+		align-items: center; position: relative; z-index: 1;
 		.box_wrapper {
 			height: 90px; flex:none;
       display: flex; justify-content: space-between;
