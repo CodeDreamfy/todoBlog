@@ -1,8 +1,8 @@
 <template>
-  <div id="app">
-     <my-header></my-header>
-     <my-content></my-content>
-  </div>
+	<div class="wrapper">
+		<my-header></my-header>
+		<my-content></my-content>
+	</div>
 </template>
 
 <script>
@@ -20,7 +20,8 @@ export default {
 <style lang="less">
 @import "~normalize.css/normalize.css";
 @import "./lib/common.css";
-#app {
-  margin: 0 auto;
+.wrapper {
+  margin: 0 auto; height: 100%; overflow: hidden;
+	display: flex; flex-direction: column;
 }
 </style>

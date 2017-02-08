@@ -3,29 +3,34 @@
 		<div class="box_wrapper">
       <div class="logo"></div>
 			<nav>
-				<a href="javascript:;" class="active">首页</a>
-				<a href="javascript:;">技术天地</a>
-				<a href="javascript:;">生活随笔</a>
-				<a href="javascript:;">电影收藏夹</a>
-				<a href="javascript:;">音乐推荐</a>
+				<a href="javascript:;" :class="{ active: status==0}">首页</a>
+				<a href="javascript:;" :class="{ active: status==1}">技术天地</a>
+				<a href="javascript:;" :class="{ active: status==2}">生活随笔</a>
+				<a href="javascript:;" :class="{ active: status==3}">电影收藏夹</a>
+				<a href="javascript:;" :class="{ active: status==4}">音乐推荐</a>
 			</nav>
 		</div>
 
 	</header>
 </template>
 <script>
-  export default {}
+  export default {
+		data() {
+			return {
+				status: 0
+			}
+		}
+	}
 </script>
 <style lang="less">
   header {
-		position: absolute; z-index: 2;
-    width: 100%; height: 90px;
+		flex: 0 0 90px;
 		background: #fff;
 		box-shadow: 0 0.4em 0.4em 0 #eee;
 		display: flex; justify-content: space-between;
 		align-items: center;
 		.box_wrapper {
-			height: 100%;
+			height: 90px; flex:none;
       display: flex; justify-content: space-between;
       align-items: center;
       .logo {
