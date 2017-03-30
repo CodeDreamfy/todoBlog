@@ -1,0 +1,30 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #cb2a1f;
+  font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+}
+@media screen and (max-width: 768px){
+  .around-corner {
+    width: 100vw; height: 100vh;
+    position: fixed; top: 0; left: 50%; transform: translate(-50%);
+    background: rgba(255,255,255,.5);
+    z-index: 10;
+  }
+  .around-corner .around-stripe {
+    position: absolute;
+    top: 11px; left: 11px; bottom: 11px; right: 11px;
+    width: calc(100vw - 22px);
+    height: calc(100vh - 22px);
+    border: 2px solid #dd7d75;
+  }
+  .content {
+    position: absolute; top: 11px; bottom: 11px; left: 50%;
+    transform: translate(-50%); z-index: 5;
+    width: calc(100vw - 22px);
+    height: calc(100vh - 22px);
+  }
+  .content .quite {
+    height: 40vh;
+  }
+}
