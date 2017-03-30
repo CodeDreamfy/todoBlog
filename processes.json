@@ -1,0 +1,17 @@
+{
+  "apps" : [{
+    "name" : "todoBlog",  //名称
+    "script": "./bin/www", //程序入库
+    "cwd": "./",           //根目录
+    "watch": [
+      "views",
+      "public",
+      "routes",
+      "bin"
+    ],
+    "ignore_watch": ["node_modules"],
+    "error_file":"./logs/app-err.log",//错误输出日志
+    "out_file":"./logs/app-out.log",  //日志
+    "log_date_format":"YYYY-MM-DD HH:mm Z" //日期格式
+    }]
+}
