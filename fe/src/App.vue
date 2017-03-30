@@ -1,27 +1,23 @@
 <template>
-	<div class="wrapper">
-		<my-header></my-header>
-		<my-content></my-content>
-	</div>
+  <div id="app">
+    <img src="./assets/logo.png">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import myHeader from './components/myHeader';
-import myContent from './components/myContent';
-
 export default {
-  components: {
-    myHeader,
-    myContent
-  }
+  name: 'app'
 }
 </script>
 
-<style lang="less">
-@import "~normalize.css/normalize.css";
-@import "./lib/common.css";
-.wrapper {
-  margin: 0 auto; height: 100%; overflow: hidden;
-	display: flex; flex-direction: column;
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>
