@@ -1,6 +1,7 @@
 <template lang="html">
   <div class="index">
-
+    <div class="index-content">
+    </div>
   </div>
 </template>
 

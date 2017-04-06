@@ -1,3 +1,25 @@
 .index {
-
+  width: 1200px;
+  min-height: 200px;
+  margin: 16px auto;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    right: 40px;
+    width: 30%;
+    height: 50%;
+    background-color: #bbb;
+    box-shadow: 0 0 10px 10px #bbb;
+    transform: skew(30deg, 4deg);
+    z-index: 1;
+  }
+  .index-content {
+    position: absolute; top: 0; left: 0;
+    z-index: 2;
+    width: 100%; min-height: 200px;
+    background: #fff;
+    box-shadow: -1px -1px 6px 2px #ebebeb;
+  }
 }
